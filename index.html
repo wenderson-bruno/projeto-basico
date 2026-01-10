@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=visibility_off" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&
+    icon_names=visibility" />
+
+</head>
+<body>
+    <label for="name" autocapitalize="off">Full Name</label>
+    <input type="text" id="name" placeholder="what should we call you?" required><br>
+    <label for="">Email</label>
+    <input type="email" id="email" placeholder="your Email" required><br>
+    <label for="senha">Enter Password</label>
+    <button id="bu" type="button" onclick="mudar()"><span class="material-symbols-outlined">visibility
+</span></button>
+    <input type="password" id="senha" placeholder="xxxxxxxxx" required><br>
+    <label for="dnovo">Confirm</label>
+    <input type="password" id="dnovo"placeholder="xxxxxxxxx" required><br>
+    <button id="up">Upgrade Profile</button>
+    <script>
+        function mudar(){
+            let senha = document.getElementById('senha')
+            if (senha.type === 'password'){
+                senha.type = 'text'
+            }else{
+                senha.type = 'password'
+            }
+        }
+        function md(mudar){
+            
+        }
+        
+    </script>
+</body>
+</html>
+
