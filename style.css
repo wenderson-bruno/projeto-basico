@@ -1,49 +1,37 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 label{
-    display: block;
     position: relative;
-    left: 10px;
+    right: 70px;
 }
 input{
     outline: none;
     border: 2px solid black;
     border-radius: 7px;
     padding: 8px;
-    margin: 10px;
+    width: 300px;
+    max-width: 30%;
 }
+
 #bu{
+    position: relative;
+    bottom: 50px;
+    display: flex;
     outline: none;
     border: 0;
     border-radius: 50%;
     background-color: white;
-    position: absolute;
-    left: 165px;
-    top: 186px;
     cursor: pointer;
 }
-#fechado{
-    outline: none;
-    border: 0;
-    border-radius: 50%;
-    background-color: white;
-    position: absolute;
-    left: 165px;
-    top: 186px;
-    cursor: pointer;    
-}
+
 #up{
-    position: relative;
-    left: 35px;
     outline: none;
     border: 0;
     border-radius: 7px;
@@ -51,4 +39,9 @@ input{
     margin: 10px;
     background-color: black;
     color: white;
+    cursor: pointer;
+}
+
+.cont_senha{
+    
 }
