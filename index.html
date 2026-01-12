@@ -11,31 +11,29 @@
 
 </head>
 <body>
-    <label for="name" autocapitalize="off">Full Name</label>
-    <input type="text" id="name" placeholder="what should we call you?" required><br>
-    <label for="">Email</label>
-    <input type="email" id="email" placeholder="your Email" required><br>
-    <label for="senha">Enter Password</label>
-    <button id="bu" type="button" onclick="mudar()"><span class="material-symbols-outlined">visibility
-</span></button>
-    <button id="fechado" onclick="fechado()"><span class="material-symbols-outlined">
-visibility_off
-</span></button>
-    <input type="password" id="senha" placeholder="xxxxxxxxx" required><br>
-    <label for="dnovo">Confirm</label>
-    <input type="password" id="dnovo"placeholder="xxxxxxxxx" required><br>
-    <button id="up">Upgrade Profile</button>
+    <div class="container">
+        <label for="name" autocapitalize="off">Full Name</label>
+        <input type="text" id="name" placeholder="what should we call you?" required><br>
+        <label for="">Email</label>
+        <input type="email" id="email" placeholder="your Email" required><br>
+        <label for="senha">Enter Password</label>
+        <button id="bu" type="button" onclick="mudar()"><span id="icon" class="material-symbols-outlined">visibility</span></button>
+        <input type="password" id="senha" placeholder="xxxxxxxxx" required><br>
+        <label for="dnovo">Confirm</label>
+        <input type="password" id="dnovo"placeholder="xxxxxxxxx" required><br>
+        <button id="up">Upgrade Profile</button>
+    </div>
     <script>
         function mudar(){
             let senha = document.getElementById('senha')
+            let icon = document.getElementById('icon')
             if (senha.type === 'password'){
                 senha.type = 'text'
+                icon.innerHTML = 'visibility_off'                
             }else{
                 senha.type = 'password'
+                icon.innerHTML = 'visibility'
             }
-        }
-        function fechado(){
-            //aqui é quando eu clicar ele aparecer o outro emoji
         }
     </script>
 </body>
